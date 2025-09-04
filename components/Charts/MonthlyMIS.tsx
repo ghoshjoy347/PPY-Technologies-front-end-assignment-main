@@ -74,8 +74,8 @@ export default function MonthlyMIS() {
         ticks: {
           stepSize: 0.20,
           color: isDarkMode ? '#e5e7eb' : '#374151',
-          callback: function(value: any) {
-            return value.toFixed(2) + ' Cr';
+          callback: function (value: number | string) {
+            return Number(value).toFixed(2) + ' Cr';
           }
         }
       }
